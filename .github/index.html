@@ -1,0 +1,61 @@
+!doctype html>
+
+<title>Smartfx Option Trade — Clone (Demo)</title> <style> :root{--accent:#0b61ff;--dark:#0b1220;--muted:#6b7280} body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;color:var(--dark);line-height:1.4} header{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;border-bottom:1px solid #eee} .brand{display:flex;gap:12px;align-items:center} .brand img{width:42px;height:42px;object-fit:cover;border-radius:6px} nav a{margin-left:16px;color:var(--dark);text-decoration:none;font-weight:600} .cta{background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none}
+.hero{padding:60px 32px;background:linear-gradient(180deg,#f6f9ff,white)}
+.hero .wrap{max-width:1100px;margin:0 auto;display:flex;gap:32px;align-items:center}
+.hero h1{font-size:34px;margin:0 0 12px}
+.hero p{color:var(--muted);margin:0 0 20px}
+.hero .buttons a{margin-right:12px;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+.primary{background:var(--accent);color:#fff}
+.secondary{border:1px solid #ddd;background:#fff;color:var(--dark)}
+
+.features{max-width:1100px;margin:36px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:0 18px}
+.card{background:#fff;border-radius:12px;padding:18px;border:1px solid #f0f0f0}
+.card h3{margin:0 0 8px}
+.trust{display:flex;gap:18px;align-items:center;max-width:1100px;margin:32px auto;padding:0 18px}
+.reviews{max-width:1100px;margin:18px auto;padding:0 18px}
+footer{border-top:1px solid #eee;padding:24px 32px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+/* responsive */
+@media (max-width:800px){.hero .wrap{flex-direction:column;text-align:center}.hero h1{font-size:26px}}
+
+/* chat bubble */
+.chat{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;padding:12px 16px;border-radius:999px;box-shadow:0 6px 18px rgba(11,97,255,0.18);cursor:pointer}
+</style>
+logo
+Smartfx Option Trade
+Online Forex ECN/STP Broker
+Platforms Funding Legal Open an account
+Trade Stocks, Forex, Options and Crypto
+Join thousands who use our platform to trade across multiple asset classes with fast execution and 24/7 support.
+
+Trade Now Practice Account
+chart
+Stocks & ETFs
+Access global stocks and ETFs. Competitive commissions and wide coverage.
+
+Invest in Stocks
+Crypto
+Buy, sell and store Bitcoin and other leading cryptocurrencies.
+
+Buy Crypto
+CFD Trading
+Trade FX, commodities and indices with flexible leverage and tight spreads.
+
+Trade Now
+Regulated
+Our company is regulated by major authorities.
+
+Swift & Reliable
+Fast APIs and multi-platform support.
+
+Privacy
+We will never share your private data without permission.
+
+What our clients say
+"Great platform for starting traders. Great selection and transparent fee system." — Bryce C.
+7,665,635 Open Trades
+© Smartfx Option Trade — Demo. Not an official site.
+Support: support@example.com
+24/7 Live Chat
+<script> document.getElementById('year').textContent = new Date().getFullYear(); function openChat(){ alert('This demo implements a placeholder chat — integrate your live-chat provider (e.g., Smartsupp) here.'); } </script>
