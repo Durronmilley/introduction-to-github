@@ -51,4 +51,4 @@ What our clients say
 Support: support@example.com
 24/7 Live Chat
 
-<script> document.getElementById('year').textContent = new Date().getFullYear(); function openChat(){ alert('This demo implements a placeholder chat — integrate your live-chat provider (e.g., Smartsupp) here.'); } </script>0
+<script> document.getElementById('year').textContent = new Date().getFullYear(); function openChat(){ alert('This demo implements a placeholder chat — integrate your live-chat provider (e.g., Smartsupp) here.'); } </script>This is just a test...
