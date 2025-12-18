@@ -1,74 +1,128 @@
-<header>
+html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smartfx Option Trade — Clone (Demo)</title>
+  <style>
+    :root{--accent:#0b61ff;--dark:#0b1220;--muted:#6b7280}
+    body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;color:var(--dark);line-height:1.4}
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px 32px;border-bottom:1px solid #eee}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{width:42px;height:42px;object-fit:cover;border-radius:6px}
+    nav a{margin-left:16px;color:var(--dark);text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none}
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+    .hero{padding:60px 32px;background:linear-gradient(180deg,#f6f9ff,white)}
+    .hero .wrap{max-width:1100px;margin:0 auto;display:flex;gap:32px;align-items:center}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .hero .buttons a{margin-right:12px;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700}
+    .primary{background:var(--accent);color:#fff}
+    .secondary{border:1px solid #ddd;background:#fff;color:var(--dark)}
 
-# Introduction to GitHub
+    .features{max-width:1100px;margin:36px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:0 18px}
+    .card{background:#fff;border-radius:12px;padding:18px;border:1px solid #f0f0f0}
+    .card h3{margin:0 0 8px}
+    .trust{display:flex;gap:18px;align-items:center;max-width:1100px;margin:32px auto;padding:0 18px}
+    .reviews{max-width:1100px;margin:18px auto;padding:0 18px}
+    footer{border-top:1px solid #eee;padding:24px 32px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
 
-_Get started using GitHub in less than an hour._
+    /* responsive */
+    @media (max-width:800px){.hero .wrap{flex-direction:column;text-align:center}.hero h1{font-size:26px}}
 
-</header>
+    /* chat bubble */
+    .chat{position:fixed;right:18px;bottom:18px;background:var(--accent);color:#fff;padding:12px 16px;border-radius:999px;box-shadow:0 6px 18px rgba(11,97,255,0.18);cursor:pointer}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><rect rx='12' width='100%' height='100%' fill='%230b61ff'/><text x='50%' y='55%' font-size='28' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>S</text></svg>" alt="logo">
+      <div>
+        <div style="font-weight:800">Smartfx Option Trade</div>
+        <div style="font-size:12px;color:var(--muted)">Online Forex ECN/STP Broker</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#">Platforms</a>
+      <a href="#">Funding</a>
+      <a href="#">Legal</a>
+      <a class="cta" href="#">Open an account</a>
+    </nav>
+  </header>
 
-<!--
-  <<< Author notes: Course start >>>
-  Include start button, a note about Actions minutes,
-  and tell the learner why they should take the course.
--->
+  <section class="hero">
+    <div class="wrap">
+      <div style="flex:1">
+        <h1>Trade Stocks, Forex, Options and Crypto</h1>
+        <p>Join thousands who use our platform to trade across multiple asset classes with fast execution and 24/7 support.</p>
+        <div class="buttons">
+          <a class="primary" href="#">Trade Now</a>
+          <a class="secondary" href="#">Practice Account</a>
+        </div>
+      </div>
+      <div style="width:360px">
+        <img src="https://via.placeholder.com/360x240?text=Chart+Preview" alt="chart" style="width:100%;border-radius:12px;display:block">
+      </div>
+    </div>
+  </section>
 
-## Welcome
+  <section class="features">
+    <div class="card">
+      <h3>Stocks & ETFs</h3>
+      <p>Access global stocks and ETFs. Competitive commissions and wide coverage.</p>
+      <a href="#">Invest in Stocks</a>
+    </div>
+    <div class="card">
+      <h3>Crypto</h3>
+      <p>Buy, sell and store Bitcoin and other leading cryptocurrencies.</p>
+      <a href="#">Buy Crypto</a>
+    </div>
+    <div class="card">
+      <h3>CFD Trading</h3>
+      <p>Trade FX, commodities and indices with flexible leverage and tight spreads.</p>
+      <a href="#">Trade Now</a>
+    </div>
+  </section>
 
-People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” course guides you through everything you need to start contributing in less than an hour.
+  <section class="trust">
+    <div style="flex:1;">
+      <h3>Regulated</h3>
+      <p style="margin:6px 0;color:var(--muted)">Our company is regulated by major authorities.</p>
+    </div>
+    <div style="flex:1;">
+      <h3>Swift & Reliable</h3>
+      <p style="margin:6px 0;color:var(--muted)">Fast APIs and multi-platform support.</p>
+    </div>
+    <div style="flex:1;">
+      <h3>Privacy</h3>
+      <p style="margin:6px 0;color:var(--muted)">We will never share your private data without permission.</p>
+    </div>
+  </section>
 
-- **Who is this for**: New developers, new GitHub users, and students.
-- **What you'll learn**: We'll introduce repositories, branches, commits, and pull requests.
-- **What you'll build**: We'll make a short Markdown file you can use as your [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-- **Prerequisites**: None. This course is a great introduction for your first day on GitHub.
-- **How long**: This course takes less than one hour to complete.
+  <section class="reviews">
+    <div style="max-width:1100px;margin:0 auto;padding:0 18px">
+      <h3>What our clients say</h3>
+      <blockquote style="border-left:3px solid #eee;padding-left:12px;color:var(--muted)">"Great platform for starting traders. Great selection and transparent fee system." — Bryce C.</blockquote>
+      <div style="margin-top:12px;color:var(--muted)">7,665,635 Open Trades</div>
+    </div>
+  </section>
 
-In this course, you will:
+  <footer>
+    <div>
+      © <span id="year"></span> Smartfx Option Trade — Demo. Not an official site.
+    </div>
+    <div style="text-align:right">
+      <div>Support: <a href="mailto:support@example.com">support@example.com</a></div>
+    </div>
+  </footer>
 
-1. Create a branch
-2. Commit a file
-3. Open a pull request
-4. Merge your pull request
+  <div class="chat" onclick="openChat()">24/7 Live Chat</div>
 
-### How to start this course
-
-<!-- For start course, run in JavaScript:
-'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'skills',
-  template_name: 'introduction-to-github',
-  owner: '@me',
-  name: 'skills-introduction-to-github',
-  description: 'My clone repository',
-  visibility: 'public',
-}).toString()
--->
-
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=introduction-to-github&owner=%40me&name=skills-introduction-to-github&description=My+clone+repository&visibility=public)
-
-1. Right-click **Start course** and open the link in a new tab.
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function openChat(){ alert('This demo implements a placeholder chat — integrate your live-chat provider (e.g., Smartsupp) here.'); }
+  </script>
+</body>
+</html>
